@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selectors */
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        /* class */
+        .favori {
+            border-left: 10px solid #007AAF;
+        }
+
+        #memleket {
+            text-align: center;
+        }
+
+        /* id */
+        #Memleket::after {
+            content: "(OTOPARK)";
+            font-weight: bold;
+        }
+
+        /* immediate child */
+        div>p {
+            margin: 0 60px;
+            text-align: justify;
+            font-size: %80;
+        }
+
+        div p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1,
+        h2 {
+            background-color: black;
+            color: white;
+        }
+        [title] {
+            background-color: yellow;
+        }
+        li[title] {
+            font-style: italic;
+        }
+        h2+p {
+            text-indent: 40PX;
+        }
+        /* ODD YA DA 2N+1 TEK SAYILARI SEÇER */
+        li:nth-child(odd) {
+            background-color: gainsboro;
+        }
+        /*  6. ÇOCUK NASIL SEÇİLİR */
+        li:nth-child(6) {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px red;
+            color:rgb(245, 205, 205);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Türkiye</h1>
+    <h2>Kütahya</h2>
+    <p>Kütahya (Latince: Cotyaeum), Ege Bölgesi'nde yer alan Kütahya ilinin merkezi olan şehirdir. Kütahya bölgesi,
+        kuzey ve batıdaki yüksek dağ sırtlarında doruğa ulaşan tarım arazileri ile geniş bir yamaç alanına sahiptir.
+        Kentin Yunanca adı Kotyaion, Roma dönemindeki adı ise Cotyaeum'dur.[1]</p>
+    <p>Kuruluş tarihi kesin olarak tespit edilememekle beraber, tarihi MÖ 3000 yıllarına uzanmaktadır. Eski kaynaklara
+        göre, Kütahya'nın antik çağlardaki adı Kotiaeon, Cotiaeum ve Koti şeklinde geçmektedir. İl topraklarına yerleşen
+        en eski halk Friglerdir. MÖ 1200'lerde Anadolu'ya gelen Frigler, Hitit İmparatorluğunun topraklarına girdiler ve
+        bir devlet olarak örgütlendiler.</p>
+    <div>
+        <p>
+            2023 yıl sonu itibarıyla Kütahya'nın nüfusu 565.664 olarak kaydedilmiştir. Bu, Kütahya'nın hem kırsal hem de
+            kentsel bölgelerinde yaşayan toplulukların bir arada olduğu bir sosyal yapıya işaret eder.
+        </p>
+        <section>
+            <p>Kütahya <span title="beyaz kil bir gövde">porselen</span> sunar..</p>
+        </section>
+    </div>
+    <h3>İlçeleri</h3>
+    <ul>
+        <li>merkez</li>
+        <li>Altıntaş</li>
+        <li>Aslanapa</li>
+        <li title="Dikkat antik kent içerir.">Çavdarhisar</li>
+        <li class="favori">Domaniç</li>
+        <li>Dumlupınar</li>
+        <li class="favori">Emet</li>
+        <li>Gediz</li>
+        <li>Hisarcık</li>
+        <li>Pazarlar</li>
+        <li>Simav</li>
+        <li>Şaphane</li>
+        <li id="Memleket" class="favori">Tavşanlı</li>
+    </ul>
+</body>
+
+</html>
