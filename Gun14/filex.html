@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .konteynir {
+            border: 10px dashed black;
+            height: 300px;
+            display: flex; /* çocukları esnek yerleşecek */
+            flex-direction: row ; /* yön belirlenir */
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .kutu1 {
+            background-color: rgb(255, 225, 0);
+        }
+
+        .kutu2 {
+            background-color: rgb(0, 255, 221);
+        }
+
+        .kutu3 {
+            background-color: rgb(0, 255, 17);
+        }
+    </style>
+</head>
+<body>
+    <div class="konteynir">
+        <div class="kutu1">Lorem, ipsum dolor.</div>
+        <div class="kutu2">Lorem, ipsum dolor.</div>
+        <div class="kutu3">Lorem, ipsum dolor.</div>
+    </div>
+</body>
+</html>

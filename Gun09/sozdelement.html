@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sözde Element</title>
+    <style>
+        body {
+            font-size: 24px
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        p::first-letter {
+            font-size: 300%;
+            float: left;
+            line-height: .75;
+            font-weight: bold;
+
+        }
+
+        p::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        main {
+            background-color: rgb(255, 252, 216);
+            max-width: 900px;
+            /*       top   x  bottom  */
+            margin: 40px auto 20px;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            padding: 36px;
+            border-radius: 10px;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, explicabo! Mollitia minima animi molestias
+            provident ab, consectetur quam maxime corporis repellendus deserunt, non laborum, sit eum autem architecto
+            suscipit explicabo!</p>
+        <p>Nihil, natus odit ducimus possimus alias ea magnam facilis doloremque necessitatibus commodi expedita
+            corporis vitae, tenetur voluptatibus odio dolorem perferendis temporibus! Doloribus vel repudiandae
+            quibusdam facilis reprehenderit commodi praesentium earum!</p>
+        <p>Accusantium fuga animi harum, eligendi temporibus veniam explicabo. Natus perspiciatis libero porro
+            cupiditate veniam, amet adipisci recusandae impedit aspernatur illo distinctio quod esse repellendus unde
+            incidunt omnis enim nulla totam.</p>
+        <p>Modi at nemo, corrupti quaerat nisi accusamus iste consequatur ipsam quia, repellendus, itaque veniam eaque
+            tenetur laboriosam minus pariatur cum neque culpa numquam officia natus hic! Eum libero eveniet voluptatum.
+        </p>
+    </main>
+</body>
+
+</html>
